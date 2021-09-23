@@ -1,0 +1,33 @@
+<script>
+var students = [
+  { id: 1, name:'홍길일', age:19, kor:90, eng:80 },
+  { id: 2, name:'홍길이', age:25, kor:80, eng:65 },
+  { id: 3, name:'홍길삼', age:32, kor:100, eng:55 },
+  { id: 4, name:'홍길사', age:96, kor:85, eng:88 },
+  { id: 5, name:'홍길오', age:23, kor:75, eng:89 },
+  { id: 6, name:'홍길육', age:45, kor:55, eng:99 },
+  { id: 7, name:'홍길칠', age:55, kor:35, eng:72 },
+  { id: 8, name:'홍길팔', age:35, kor:95, eng:45 },
+]
+
+var kor = students.filter(function(v) {
+  return v.kor >= 60;
+});
+console.log(kor);
+
+var koreng = students.filter(function(v) {
+  return v.kor >=60 && v.eng >=60;
+});
+console.log(koreng);
+
+var age30 = students.filter(function(v){
+  return v.kor >= 60 && v.eng >= 60 && v.age >= 30;
+});
+console.log(age30);
+
+var fruits = ['Apple','Banana','Cherry'];
+var fruits2 = ['Water Melon', 'Melon', 'Orange'];
+var fruits3 = fruits.concat(fruits2);
+console.log(fruits3);
+
+</script>
