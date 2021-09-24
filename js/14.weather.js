@@ -57,7 +57,7 @@ function onCoordError(err) {
 /*************** global init **************/
 const appid = '027f53fd2862c2fe1b7b39a234bd8b0c';
 // const url = 'https://api.openweathermap.org/data/2.5/weather';
-const url = 'http://127.0.0.1:3000/weather';
+const url = 'http://127.0.0.1.3000/weather';
 const icons = ['http://openweathermap.org/img/wn/', '@2x.png'];
 const param = { units: 'metric', appid };
 
